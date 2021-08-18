@@ -1,33 +1,61 @@
-body {
-    background-image:url(/assets/Mindrepo.jpeg);
-    background-size:cover;
-    background-repeat:no-repeat;
+html {
+  background: url("/images/galaxy.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
-    display:flex;
-    flex-wrap:wrap;
+  display: flex;
+  justify-content: center;
 }
 
-.logo {
-    width:150px;
-    height:auto;
-    max-width:100%;
+header img {
+  width: 9vw;
+  margin-right: 1vw;
 }
 
-.siteTitle {
-    font:xx-large;
-    font-family:monospace;
-    color:navy;
-    font-size-adjust: inherit;
+header h1 {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url("/images/goldtext.jpg");
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: none;
 }
 
-.journal_input {
-    display:flex;
-    float:left;
-    text-align:left;
-    width:300px;
-    height:500px;
-    margin: 0 auto; 
-    border: 3px dotted darkslateblue;
+/* ================================================================== */
+
+h2 {
+  font-family: "Comfortaa", cursive;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  border: 5px solid;
+  border-image: url("/images/goldtext.jpg") 300 repeat;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px 3px black;
+  color: white;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

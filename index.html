@@ -6,44 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-    
     <header>
-        <img class="logo" src="assets/logo.jpeg" alt="Brain Logo">
-        <h1 class="siteTitle">Joshua's Mind Repo</h1>
+        <h1><img src="images/goldbrain.png"> JOSHUA'S MIND REPO</h1>
     </header>
 
-    <div class="navbar">
-
-        <div class="date">
-            <date></date>
+    <main>
+        <div class="form_container">
+            <h2>Jot them thoughts!</h2>
+            <form action=" ">
+                <fieldset>
+                    <label for="journalDate">Date of Entry :</label>
+                    <input type="date" name="journalDate" id="journalDate"/>
+                </fieldset>
+                <fieldset>
+                    <label for="journalConcept">Concepts Covered :</label>
+                    <input type="text" name="journalConcept" id="journalConcept"/>
+                </fieldset>
+                <fieldset class="textarea">
+                    <label for="journalEntry">Journal Entry :</label>
+                    <!-- <input type="textarea" name="journalConcept" id="journalConcept"/> -->
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="journalMood">Mood for the Day :</label>
+                    <input type="text" list="moods" name="journalMood" id="journalMood"/>
+                        <datalist id="moods">
+                            <option value="Confident">
+                            <option value="Unsure">
+                            <option value="Happy">
+                            <option value="Depressed">
+                            <option value="Wistful">
+                        </datalist>
+                </fieldset>
+            </form>
         </div>
+    </main>
 
-        <div class="topic">
-            <text></text>
-        </div>
-        <div class="mood">
-        <select>
-            <option></option>
-            <option></option>
-            <option></option>
-        </select>
-        </div>
+    <footer>
 
-    </div>
-
-    <form>
-        <input class="journal_input" type="text" name="journal">
-        
-    </form>
-
-
-
-
+    </footer>
 </body>
-
-
 </html>
