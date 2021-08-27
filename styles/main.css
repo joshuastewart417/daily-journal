@@ -72,6 +72,7 @@ form {
 }
 
 .entryList ul {
+  list-style-type: none;
   width: 50vw;
   font-size: 1.3vw;
   border: 1px solid white;
